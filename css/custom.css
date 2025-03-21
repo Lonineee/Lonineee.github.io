@@ -616,3 +616,82 @@ body::-webkit-scrollbar {
 .rightMenu-group.hide {
   display: none;
 }
+
+/* 帧率检测 */
+#fps {
+  position: fixed;
+  /* 指定位置 */
+  right: 10px;
+  bottom: 5px;
+  z-index: 1919810;
+}
+[data-theme="light"] #fps {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: var(--backdrop-filter);
+  padding: 4px;
+  border-radius: 4px;
+}
+[data-theme="dark"] #fps {
+  background-color: rgba(0, 0, 0, 0.72);
+  backdrop-filter: var(--backdrop-filter);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.recent-post-item:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-info:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-announcement:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-recent-post:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-categories:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-tags:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-archives:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+.card-widget.card-webinfo:hover {
+  box-shadow: 0 0 0 3px #50ccd5 !important;
+}
+
+#aside-content .aside-list > .aside-list-item {
+  transition: background-color 0.3s ease, color 0.3s ease,
+      border-radius 0.3s ease, transform 0.2s ease, padding-left 0.3s ease,
+      margin-left 0.3s ease; /* 添加过渡效果 */
+  padding: 5px 5px !important;
+}
+
+.aside-list-item:hover {
+  background-color: #50ccd5; /* 蓝色背景 */
+  color: white; /* 白色字体 */
+  border-radius: 8px; /* 四个角为圆角 */
+  transform: scale(1.05); /* 略微放大 */
+}
+
+.aside-list-item:hover a.title {
+  color: white !important; /* 白色字体 */
+}
+
+.aside-list-item:hover time {
+  color: white !important; /* 白色字体 */
+}
+
+img {
+  border-radius: 8px;
+}
